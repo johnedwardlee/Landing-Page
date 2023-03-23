@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 body{
-    overflow: hidden;
     display: flex;
     flex-direction: column;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin:0;
     flex:1;
 }
 
+/* *************************************************** */
+/******* Top Section ****************/
 .top{
     display: flex;
     flex-direction: column;
@@ -26,6 +29,7 @@ body{
 .header > .text{
     color: #f9faf8;
     font-size: 24px;
+    font-weight: bold;
 }
 
 #links ul{
@@ -46,6 +50,7 @@ a{
     display: flex;
     justify-content: space-between;
     margin-bottom: 75px;
+    gap: 20px;
 }
 
 .left > .text-top{
@@ -56,15 +61,136 @@ a{
 .left > .text-bottom{
     font-size: 18px;
     color: #e5e7eb;
+    font-weight: 300;
+}
+.left > button{
+    color: #f9faf8;
+    font-weight: 500;
+    background-color: #3882f6;
+    border-radius: 4px;
+    border: 0;
+    margin-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.right{
+    display: flex;
+}
+
+/* *************************************************** */
+/* ****** Mid Section 1 ****************************** */
+
+.mid1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.mid1 > .text{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    padding: 25px;
+}
+
+.images-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.image > .text{
+    width: 200px;
+    text-align: center;
+}
+.image > img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    border: 3px solid #3882f6;
+}
+
+/* *************************************************** */
+/* ****** Mid Section 2 ****************************** */
+
+.mid2{
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    flex-direction: column;
+}
+
+.mid2 > .quote{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1f2937;
+}
+
+.mid2 > .quoter{
+    font-weight: bold;
+    font-size: large;
+    align-self: flex-end;
+}
+
+/* *************************************************** */
+/* ****** Mid Section 3 ****************************** */
+
+.mid3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 125px;
+    margin-right: 125px;
+    background-color: #3882f6;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    border-radius: 6px;
+    gap: 100px;
+}
+
+.mid3 > .text > .text-top{
+    font-weight: 500;
+    font-size: larger;
+    color: #f9faf8;
+}
+
+.mid3 > .text > .text-bottom{
+    font-weight: 300;
+    color: #e5e7eb;
+}
+
+.mid3 > button{
+    color: #f9faf8;
+    font-weight: 500;
+    background-color: #3882f6;
+    border-radius: 4px;
+    border: 1px solid #f9faf8;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex: 0 0 auto
 }
 
 
-
+/* **************************************************** */
+/* ********* Footer *********************************** */
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1f2937;
     color: #e5e7eb;
-    height: 72px;
+    height: 75px;
   }
